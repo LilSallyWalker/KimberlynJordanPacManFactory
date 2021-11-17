@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+<!DOCTYPE 
+<html>
 <head>
     <title>PacMan Factory</title>     
 </head>  
@@ -43,7 +44,7 @@ function makePacMan() {
 function update() {
     //loop over pacmen array and move each one and move image in DOM
     pacMen.forEach((item) => {
-        checkCollisions(item)
+        checkCollisions(item);
         item.position.x += item.velocity.x;
         item.position.y += item.velocity.y;
 
@@ -59,16 +60,15 @@ function checkCollisions(item) {
     if (item.position.y + item.velocity.y + item.newimg.height > window.innerHeight ||
         item.position.y + item.velocity.y < 0) item.velocity.y = -item.velocity.y;
 }
-
-function makeOne() {
-    pacMen.push(makePac()); // add a new PacMan
+//add a new PacMan
+function makePac() {
+    pacMen.push(makePac()); 
 }
 </SCRIPT>
-
+<body>
 <div id='game'>
     <button onclick='makeOne()' width='200' height='30'>Add PacMan</button>
     <button onclick='update()' width='200' height='30'>Start Game</button>
-
-        </div>
-    </body>
+</div>
+</body>
 </html>
