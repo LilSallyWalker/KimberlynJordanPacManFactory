@@ -7,9 +7,9 @@ This will run locally in your browser from index.html if you download all files 
 
 Built with
 
-Javascript
 HTML
 CSS
+Javascript
 
 Planned Future Improvements
 Add Pac Dots to screen
